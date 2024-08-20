@@ -24,7 +24,7 @@ const HomePage = () => {
     ]
     return (
         <>
-            <section className='w-full bg-homeImage bg-cover'>
+            <section className='w-full bg-cover' style={{backgroundImage: "url(./src/assets/calvaryImage1.jpg)"}}>
                 <div className=" max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WELCOME TO</h1>
