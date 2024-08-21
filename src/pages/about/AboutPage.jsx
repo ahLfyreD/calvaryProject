@@ -37,7 +37,8 @@ const AboutPage = () => {
 
             <section className='shadow-xl bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
-                    <div className='bg-pastorsImage border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
+                    <div className='border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
+                        <img src={LeadPastor} className='w-full h-full' alt="" />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-28 sm:mt-7'>
                         <h2 className='text-2xl sm:text-4xl mb-3 text-[white]'>Pastor & Mrs Isaiah James</h2>
