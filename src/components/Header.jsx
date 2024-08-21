@@ -35,7 +35,7 @@ const Menu = [
 const Header = () => {
 
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [menuDisplay, setMenuDisplay] = useState(true);
+  const [menuDisplay, setMenuDisplay] = useState(false);
   const headerRef = useRef(null);
 
   useEffect(() => {
