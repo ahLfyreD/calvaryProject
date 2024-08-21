@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/calvaryLogo.png'
+import logo from '../assets/images/calvaryLogo.png'
 import { useState, useEffect, useRef } from 'react';
 import { IoMdMenu } from "react-icons/io";
 import { FaTimes } from "react-icons/fa";
