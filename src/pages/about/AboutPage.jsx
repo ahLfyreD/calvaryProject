@@ -1,5 +1,5 @@
 import React from 'react'
-import LeadPastor from '../../assets/images/calvaryImage1.png'
+import LeadPastor from '/assets/images/calvaryImage1.png'
 
 const AboutPage = () => {
     return (
