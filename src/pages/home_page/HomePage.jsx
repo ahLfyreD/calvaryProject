@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import bgImg from '../../assets/images/calvaryImage1.png'
+import bgImg from '../../assets/images/homepageBackground.jpg'
 import Carousel from '../../components/Carousel'
 
 const HomePage = () => {
@@ -24,11 +24,8 @@ const HomePage = () => {
     ]
     return (
         <>
-            <section className='w-full bg-cover relative'>
-                <div className='absolute inset-0'>
-                    <img className='w-full h-full' src={bgImg} alt="" />
-                </div>
-                <div className=" max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center relative">
+            <section className='w-full bg-homeImage bg-cover'>
+                <div className=" max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WELCOME TO</h1>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>CALVARY FAMILY CHURCH</h1>
