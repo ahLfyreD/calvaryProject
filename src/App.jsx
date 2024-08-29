@@ -9,7 +9,8 @@ import PrayerPage from './pages/prayer_page/PrayerPage';
 import AboutPage from './pages/about/AboutPage';
 import Give from './pages/give/Give';
 import Youth from './pages/youth/Youth';
-import Modal from './components/Modal'
+import Modal from './components/Modal';
+import Loading from './components/loading/Loading'
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   const [showPage, setShowPage] = useState(true)
 
   return (
-    <Suspense>
+    <Suspense fallback={<Loading />}>
       <Router>
         <ScrollToTop />
         {showPage && (
@@ -27,7 +28,12 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/prayer" element={<PrayerPage />} />
-              <Route path="/who_we_are" element={<AboutPage />} />
+              <Route path="/who_we_are" element={
+                <AboutPage
+                  openModal={() => {
+                    setModal(true);
+                    setShowPage(false);
+                  }} />} />
               <Route path="/give" element={<Give />} />
               <Route path="/youth_ministry" element={<Youth />} />
             </Routes>

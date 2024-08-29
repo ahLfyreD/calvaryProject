@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 
 
-const AboutPage = () => {
+const AboutPage = ({ openModal }) => {
     const images = [
         {
             id: 1,
@@ -48,7 +48,7 @@ const AboutPage = () => {
     return (
         <>
             <section className='w-full bg-aboutBgImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className='absolute inset-0 opacity-[30%] bg-black' />
                 <div className="max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12 relative'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WE BELEIVE IN THE <br /> POWER OF PRAYERS</h1>
@@ -80,7 +80,8 @@ const AboutPage = () => {
 
             <section className='shadow-xl bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
-                    <div className='border-2 bg-pastorsImage bg-cover border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] sm:absolute sm:top-0 sm:right-0'>
+                    <div className='border-2 relative bg-pastorsImage bg-cover border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] sm:absolute sm:top-0 sm:right-0'>
+                        <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-28 sm:mt-7'>
                         <h2 className='text-2xl sm:text-4xl mb-3 text-[white]'>Pastor & Mrs Isaiah James</h2>
@@ -174,7 +175,9 @@ const AboutPage = () => {
                         <p className='text-center font-light text-lg sm:text-xl'>We encourage you to connect with our leadership team! They are dedicated to serving our community and are available to answer questions, offer guidance, or simply connect on a personal level.
                         </p>
                         <div className='mx-auto'>
-                            <button className='border border-[#115d02] p-3 font-semibold hover:text-white hover:bg-[#115d02] transition-all ease-in-out duration-300'>
+                            <button className='border border-[#115d02] p-3 font-semibold hover:text-white hover:bg-[#115d02] transition-all ease-in-out duration-300'
+                                onClick={openModal}
+                            >
                                 Contact Us
                             </button>
                         </div>

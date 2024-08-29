@@ -25,7 +25,7 @@ const HomePage = () => {
     return (
         <>
             <section className="w-full bg-cover bg-giveBgImage relative">
-                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className='absolute inset-0 opacity-[30%] bg-black' />
                 <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WELCOME TO</h1>
@@ -59,10 +59,10 @@ const HomePage = () => {
 
                 </div>
             </section>
-            <section className='shadow-xl bg-[#f4f4f4] p-10'>
+            <section className='shadow-xl bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
                     <div className='bg-pastorBgImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
-                        <div className='absolute inset-0 opacity-[70%] bg-black' />
+                        <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20  sm:mt-8'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>You’re Welcome Here!</h2>
@@ -136,10 +136,10 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='shadow-xl bg-[#f4f4f4] p-10'>
+            <section className='shadow-xl bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-end relative">
                     <div className='bg-pastorImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:left-0'>
-                    <div className='absolute inset-0 opacity-[70%] bg-black' />
+                    <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20 sm:mt-8'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>Word from Pastor!</h2>

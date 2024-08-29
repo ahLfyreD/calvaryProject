@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '/assets/images/calvaryLogo.png';
 import { useState, useEffect, useRef } from 'react';
 import { IoMdMenu } from "react-icons/io";
@@ -10,10 +10,6 @@ const Menu = [
     title: 'Home',
     path: '/'
   },
-  // {
-  //   title: 'Sermons',
-  //   path: '/sermons'
-  // },
   {
     title: 'Prayer',
     path: '/prayer'
@@ -33,6 +29,9 @@ const Menu = [
 ]
 
 const Header = () => {
+
+  const activeLink = "text-[#1f4717] font-bold";
+  const normalLink = "no-underline hover:scale-50";
 
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [menuDisplay, setMenuDisplay] = useState(false);
@@ -76,9 +75,13 @@ const Header = () => {
             <ul className='flex list-none gap-4 text-xl'>
               {Menu.map((item, index) => {
                 return <li key={index}>
-                  <Link to={item.path}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? activeLink : normalLink}
+                    to={item.path}
+                  >
                     {item.title}
-                  </Link>
+                  </NavLink>
                 </li>
               })}
             </ul>
@@ -86,15 +89,19 @@ const Header = () => {
 
         </div>
         {menuDisplay && (
-          <div className='absolute flex bottom-74px lg:hidden bg-black opacity-[95%] h-[100vh] w-full'>
+          <div className='absolute flex bottom-74px lg:hidden bg-black opacity-[95%] h-[fit-content] w-full'>
             <div className='relative flex w-full sm:w-[50%] h-full bg-white'>
-              <div className='lg:hidden w-full flex justify-center bg-white'>
-                <ul className='flex flex-col list-none gap-7 text-4xl p-5'>
+              <div className='lg:hidden w-full  bg-white'>
+                <ul className='w-full list-none gap-7 text-2xl'>
                   {Menu.map((item, index) => {
-                    return <li key={index}>
-                      <Link to={item.path} onClick={() => setMenuDisplay(false)}>
+                    return <li key={index} className='w-full p-4'>
+                      <NavLink
+                        className={({ isActive }) =>
+                          isActive ? activeLink : normalLink}
+                        to={item.path}
+                        onClick={() => setMenuDisplay(false)}>
                         {item.title}
-                      </Link>
+                      </NavLink>
                     </li>
                   })}
                 </ul>

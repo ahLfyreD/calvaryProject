@@ -5,7 +5,7 @@ const Youth = () => {
     return (
         <>
             <section className='w-full bg-youthImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className='absolute inset-0 opacity-[30%] bg-black' />
                 <div className="max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12 relative flex justify-center items-center'>
                         <div>
@@ -92,7 +92,7 @@ const Youth = () => {
             <section>
                 <div className="w-full p-5 max-w-6xl mx-auto relative">
                     <div className='sm:flex sm:justify-center py-2 min-w-full'>
-                        <div className='mb-6 w-[50%] shadow-md p-6 bg-[#f4f4f4]'>
+                        <div className='mb-6 w-full sm:w-[50%] shadow-md p-6 bg-[#f4f4f4]'>
                             <h2 className='text-lg sm:text-[1.6rem] mb-5 text-center'>Contact Us</h2>
                             <EmailForm />
                         </div>

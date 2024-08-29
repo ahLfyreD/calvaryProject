@@ -17,10 +17,10 @@ const Footer = ({ openModal }) => {
               Contact Us
             </button>
           </div>
-          <p className='text-lg font-medium'>118 Aka Road, Close to William Street Uyo, Nigeria.</p>
+          <p className='text-sm sm:text-lg font-medium'>118 Aka Road, Close to William Street Uyo, Nigeria.</p>
         </div>
         <div className='w-full py-4 flex justify-between'>
-          <p className='text-lg font-light'>Copyright © 2024. Calvary Family Church</p>
+          <p className='text-[12px] sm:text-lg font-light'>Copyright © 2024. Calvary Family Church</p>
           <div className='flex gap-5 text-2xl'>
             <a href="" target='_blank'>
               <FaFacebook />
