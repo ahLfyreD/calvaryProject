@@ -71,7 +71,7 @@ const PrayerPage = () => {
                 <div className="w-full p-5 max-w-6xl mx-auto">
                     <div className='grid lg:grid-cols-3 lg:gap-5 m-auto'>
                         <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg  min-w-[300px] w-full p-5 flex flex-col justify-between'>
-                            <div>
+                            <div className='mb-4'>
                                 <h2 className='text-xl sm:text-2xl font-medium mb-4'>Daily Devotionals</h2>
                                 <p className='text-lg sm:text-xl font-normal'>Subscribe to our Fresh Start with Jesus - a daily text message with prayers, inspirational messages, and devotionals right to your phone.</p>
                             </div>
@@ -117,7 +117,7 @@ const PrayerPage = () => {
                         <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#f4f4f4] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20  sm:mt-8'>
-                        <h2 className='text-3xl sm:text-5xl mb-3 text-[black]'>Share your Testimonies</h2>
+                        <h2 className='text-3xl sm:text-5xl text-center mb-3 text-[black]'>Share your Testimonies</h2>
                         <p className='text-lg sm:text-xl mb-3 text-[black]'>The power of faith is amplified when shared. Have you experienced God's love, guidance, or answered prayers in a powerful way? We invite you to share your testimony and inspire others!</p>
 
                         <p className='text-lg sm:text-xl mb-3 text-[black]'>"Let them give thanks to the Lord for his unfailing love and his wonderful deeds to men." - Psalm 107:15</p>

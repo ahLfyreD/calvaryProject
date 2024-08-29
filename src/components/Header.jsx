@@ -89,7 +89,7 @@ const Header = () => {
 
         </div>
         {menuDisplay && (
-          <div className='absolute flex bottom-74px lg:hidden bg-black opacity-[95%] h-[fit-content] w-full'>
+          <div className='absolute flex bottom-74px lg:hidden bg-black opacity-[90%] h-[fit-content] w-full ease-in-out duration-700'>
             <div className='relative flex w-full sm:w-[50%] h-full bg-white'>
               <div className='lg:hidden w-full  bg-white'>
                 <ul className='w-full list-none gap-7 text-2xl'>

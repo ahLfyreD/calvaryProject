@@ -39,7 +39,7 @@ const Donate = () => {
 
 
     return (
-        <div className='px-4'>
+        <div>
             <input
                 type="text"
                 value={name}
