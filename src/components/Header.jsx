@@ -10,10 +10,10 @@ const Menu = [
     title: 'Home',
     path: '/'
   },
-  {
-    title: 'Live Stream',
-    path: '/livestream'
-  },
+  // {
+  //   title: 'Sermons',
+  //   path: '/sermons'
+  // },
   {
     title: 'Prayer',
     path: '/prayer'

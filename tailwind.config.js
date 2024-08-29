@@ -15,6 +15,12 @@ export default {
         calvaryBgImage: 'url(/assets/images/calvarybgImage.jpg)',
         bgImage: 'url(/assets/images/homepageBackground.jpg)',
         prayerImage: 'url(/assets/images/prayerCalvary.jpg)',
+        youthImage: 'url(/assets/images/pastorGabriel.jpg)',
+        giveBgImage: 'url(/assets/images/calvaryGallery7.jpg)',
+        aboutBgImage: 'url(/assets/images/calvaryGallery10.jpg)',
+        testBgImage: 'url(/assets/images/calvaryGallery9.jpg)',
+        pastorBgImage: 'url(/assets/images/pastorIsaiah.jpg)',
+        pastorWifeImage: 'url(/assets/images/pastorWife.jpg)',
       }
     },
   },

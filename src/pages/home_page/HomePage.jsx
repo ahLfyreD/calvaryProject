@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Carousel from '../../components/Carousel'
+import Carousel from '../../components/Carousel';
+import { FaArrowRight } from "react-icons/fa";
 
 const HomePage = () => {
 
@@ -17,14 +18,15 @@ const HomePage = () => {
         },
         {
             text: "Join us this Sunday for worship!",
-            subText: "Let us worship together in one Family .",
+            subText: "Let us worship together in one Family.",
             linkText: "Get Directions"
         }
     ]
     return (
         <>
-            <section className="w-full bg-cover bg-homeImage">
-                <div className=" max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
+            <section className="w-full bg-cover bg-giveBgImage relative">
+                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WELCOME TO</h1>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>CALVARY FAMILY CHURCH</h1>
@@ -45,11 +47,11 @@ const HomePage = () => {
                                     <h2 className='text-lg sm:text-[1.6rem] mb-2 text-[white]'>{item.text}</h2>
                                     <p className='text-sm sm:text-lg text-[white]'>{item.subText}</p>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <button className='border border-white text-white p-3 font-semibold  hover:text-[#115d02] hover:bg-white transition-all ease-in-out duration-300'>
                                         {item.linkText}
                                     </button>
-                                </div>
+                                </div> */}
 
                             </div>
                         ))}
@@ -57,9 +59,10 @@ const HomePage = () => {
 
                 </div>
             </section>
-            <section className='shadow-xl bg-[#f4f4f4] py-10'>
+            <section className='shadow-xl bg-[#f4f4f4] p-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
-                    <div className='bg-pastorsImage border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
+                    <div className='bg-pastorBgImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
+                        <div className='absolute inset-0 opacity-[70%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20  sm:mt-8'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>You’re Welcome Here!</h2>
@@ -84,43 +87,46 @@ const HomePage = () => {
             <section className='bg-[#f4f4f4]'>
                 <div className="w-full p-5 max-w-6xl mx-auto">
                     <div className='grid lg:grid-cols-3 lg:gap-5 m-auto'>
-                        <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg h-[300px] min-w-[300px] w-full p-5 flex flex-col justify-between'>
+                        <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg min-w-[300px] w-full p-5 flex flex-col justify-between'>
                             <div>
-                                <h2 className='text-2xl font-medium mb-4'>Prayer Request</h2>
-                                <p>Life's journey brings joys, challenges, and uncertainties. We believe in the power of prayer to offer comfort, strength, and hope. Share your prayer requests - big or small - with our caring church family. <br />
+                                <h2 className='text-xl sm:text-2xl font-medium mb-4'>Prayer Request</h2>
+                                <p className='text-sm sm:text-lg mb-6'>Life's journey brings joys, challenges, and uncertainties. We believe in the power of prayer to offer comfort, strength, and hope. Share your prayer requests - big or small - with our caring church family. <br />
 
                                     Let us lift you up together in prayer.</p>
                             </div>
                             <div className='w-fit'>
-                                <Link to='/prayer'>
+                                <Link to='/prayer' className='flex gap-2 items-center'>
                                     <h2 className='text-lg hover:underline cursor-pointer'>Ask for prayer</h2>
+                                    <FaArrowRight />
                                 </Link>
                             </div>
 
                         </div>
-                        <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg h-[300px] min-w-[300px] w-full p-5 flex flex-col justify-between'>
+                        <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg min-w-[300px] w-full p-5 flex flex-col justify-between'>
                             <div>
-                                <h2 className='text-2xl font-medium mb-4'>Who we are</h2>
-                                <p>Calvary Family Church is a family of revival-minded people yearning for transformation for the people of Akwa Ibom and the world.<br />
+                                <h2 className='text-xl sm:text-2xl font-medium mb-4'>Who we are</h2>
+                                <p className='text-sm sm:text-lg mb-6'>Calvary Family Church is a family of revival-minded people yearning for transformation for the people of Akwa Ibom and the world.<br />
 
                                     We believe in looking unto Jesus Christ the author and finisher of our faith. Hebrew 12:2</p>
                             </div>
                             <div className='w-fit'>
-                                <Link to='/who_we_are'>
+                                <Link to='/who_we_are' className='flex gap-2 items-center'>
                                     <h2 className='text-lg hover:underline cursor-pointer'>Learn More</h2>
+                                    <FaArrowRight />
                                 </Link>
                             </div>
 
 
                         </div>
-                        <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg h-[300px] min-w-[300px] w-full p-5 flex flex-col justify-between'>
+                        <div className='mb-10 shadow-sm shadow-[#686868] rounded-lg min-w-[300px] w-full p-5 flex flex-col justify-between'>
                             <div>
-                                <h2 className='text-2xl font-medium mb-4'>Give</h2>
-                                <p>Calvary Family Church helps people find Christ's love. Your generosity supports sharing Jesus' message with those who need it and empowers believers through God's word.</p>
+                                <h2 className='text-xl sm:text-2xl font-medium mb-4'>Give</h2>
+                                <p className='text-sm sm:text-lg mb-6'>Calvary Family Church helps people find Christ's love. Your generosity supports sharing Jesus' message with those who need it and empowers believers through God's word.</p>
                             </div>
                             <div className='w-fit'>
-                                <Link to='/give'>
+                                <Link to='/give' className='flex gap-2 items-center'>
                                     <h2 className='text-lg hover:underline cursor-pointer'>Give</h2>
+                                    <FaArrowRight />
                                 </Link>
                             </div>
 
@@ -130,9 +136,10 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='shadow-xl bg-[#f4f4f4] py-10'>
+            <section className='shadow-xl bg-[#f4f4f4] p-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-end relative">
-                    <div className='bg-pastorImage border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:left-0'>
+                    <div className='bg-pastorImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:left-0'>
+                    <div className='absolute inset-0 opacity-[70%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20 sm:mt-8'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>Word from Pastor!</h2>

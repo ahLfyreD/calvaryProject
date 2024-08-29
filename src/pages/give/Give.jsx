@@ -1,4 +1,5 @@
 import React from 'react'
+import Donate from '../../components/Donate'
 
 const Give = () => {
     const data = [
@@ -19,12 +20,12 @@ const Give = () => {
 
     return (
         <>
-            <section className='w-full bg-prayerImage bg-cover relative'>
+            <section className='w-full bg-homeImage bg-cover relative'>
                 <div className='absolute inset-0 opacity-[70%] bg-black' />
                 <div className="p-5 max-w-3xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
-                    <div className='relative w-full p-6 bg-[#11250d] text-white rounded-2xl mb-12 flex flex-col justify-center gap-7'>
-                        <h1 className='text-center font-light text-3xl sm:text-5xl'>Your generosity fuels our mission!</h1>
-                        <p className='text-center font-light text-lg sm:text-xl'>At Calvary Family Church, we strive to spread the love of Christ, nurture spiritual growth, and serve our community. Your financial support plays a vital role in making this possible.
+                    <div className='relative w-full p-6 text-white rounded-2xl mb-12 flex flex-col justify-center gap-7'>
+                        <h1 className='text-center font-medium text-3xl sm:text-5xl'>Your generosity fuels our mission!</h1>
+                        <p className='text-center font-medium text-lg sm:text-xl'>At Calvary Family Church, we strive to spread the love of Christ, nurture spiritual growth, and serve our community. Your financial support plays a vital role in making this possible.
                         </p>
                     </div>
                 </div>
@@ -52,9 +53,12 @@ const Give = () => {
             </section>
             <section>
                 <div className="w-full p-14">
-                    <h1 className='text-center font-light text-3xl sm:text-5xl'>Account Details for Donation:</h1>
-                    <div>
+                    <div className='mb-6'>
+                        <h1 className='text-center font-light text-3xl sm:text-5xl'>Enter Details for Donation:</h1>
+                    </div>
 
+                    <div className='max-w-md w-full mx-auto'>
+                        <Donate />
                     </div>
                 </div>
 

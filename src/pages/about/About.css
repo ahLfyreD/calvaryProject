@@ -1,0 +1,46 @@
+
+
+.logos::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+    content: "";
+    z-index: 1;
+}
+.logos::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+    content: "";
+    z-index: 1;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logo_slides {
+    white-space: nowrap;
+    animation: 15s slide infinite linear;
+}
+
+/* .logo_slides:hover {
+    animation-play-state: paused;
+} */
+
+.logo_slides img {
+  height: 50px;
+  width: 150px;
+  margin: 0 60px;
+}
