@@ -137,7 +137,7 @@ const AboutPage = ({ openModal }) => {
                             </div>
                             <div>
                                 <h2 className='text-lg text-center font-bold'>Pastor Isaiah James</h2>
-                                <p className='text-center'>General Overseer and Pastoral care director at Calvary Family Church</p>
+                                <p className='text-center'>Senior Pastor</p>
                             </div>
 
 
@@ -147,8 +147,8 @@ const AboutPage = ({ openModal }) => {
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center font-bold'>Pastor Mrs Isaiah James</h2>
-                                <p className='text-center'>Pastor at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Pastor Ndifreke Isaiah</h2>
+                                <p className='text-center'>Administrative Pastor</p>
                             </div>
 
 
@@ -158,8 +158,19 @@ const AboutPage = ({ openModal }) => {
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center font-bold'>Pastor Ezekiel Micheal</h2>
-                                <p className='text-center'>Minister at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Pastor Bassey Etang</h2>
+                                <p className='text-center'>Men's Pastor</p>
+                            </div>
+
+
+                        </div>
+                        <div className='mx-auto rounded-lg w-[300px] p-5 flex flex-col items-center justify-around'>
+                            <div className='w-40 h-40 rounded-full bg-youthLeader bg-cover'>
+
+                            </div>
+                            <div>
+                                <h2 className='text-lg text-center font-bold'>Pastor Gabriel Anthony Emmanuel</h2>
+                                <p className='text-center'>Assistant Pastor/Youth Pastor</p>
                             </div>
 
 

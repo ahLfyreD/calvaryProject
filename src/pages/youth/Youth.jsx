@@ -65,8 +65,8 @@ const Youth = () => {
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center font-bold'>Pastor Gabriel</h2>
-                                <p className='text-center'>Youth Pastor at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Pastor Gabriel Anthony</h2>
+                                <p className='text-center'>Youth Pastor</p>
                             </div>
 
 
@@ -76,8 +76,8 @@ const Youth = () => {
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center font-bold'>Minister Ayo</h2>
-                                <p className='text-center'>Youth Minister at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Ayo Alatise</h2>
+                                <p className='text-center'>Youth Minister</p>
                             </div>
 
 
@@ -87,8 +87,8 @@ const Youth = () => {
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center font-bold'>Victor</h2>
-                                <p className='text-center'>Choir Leader at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Victor Edet</h2>
+                                <p className='text-center'>Choir Leader</p>
                             </div>
 
 
