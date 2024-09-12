@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { PaystackButton } from 'react-paystack';
 
 const Donate = () => {
-    const publicKey = "pk_test_a85220d8573bb954bd79bdf89114ab895d9652aa"
+    const publicKey = "pk_test_96ba395e1d8dfd2b56b778d847ef096d456eced0"
 
 
     const [email, setEmail] = useState("");

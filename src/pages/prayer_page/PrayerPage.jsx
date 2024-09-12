@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import { SiTicktick } from "react-icons/si";
+import emailjs from '@emailjs/browser';
 
 
 const PrayerPage = () => {
@@ -16,14 +17,13 @@ const PrayerPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const serviceID = "service_hge1zmy";
-        const templateID = "template_5hfuols";
-        const publicKey = "B7ridoDOnL18NEqYc";
+        const serviceID = "service_ytd3s6e";
+        const templateID = "template_78fa5f3";
+        const publicKey = "nvfqUvp5ilMeuahkC";
 
         const templateParams = {
             from_number: phoneNumber,
             to_name: "Calvary Family",
-            message: message,
         };
 
         emailjs.send(serviceID, templateID, templateParams, publicKey)
@@ -31,7 +31,7 @@ const PrayerPage = () => {
                 setButtonText(<SiTicktick />);
                 setPhoneNumber("");
 
-                setTimeout(() => setButtonText('Send'), 3000);
+                setTimeout(() => setButtonText(<FaArrowRight />), 3000);
 
             })
             .catch((error) => {
@@ -43,7 +43,7 @@ const PrayerPage = () => {
     return (
         <>
             <section className='w-full bg-prayerImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[30%] bg-black' />
+                <div className='absolute inset-0 opacity-[70%] bg-black' />
                 <div className="max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12 relative'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WE BELEIVE IN THE <br /> POWER OF PRAYERS</h1>
@@ -53,14 +53,14 @@ const PrayerPage = () => {
             <section className='shadow-xl bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-end relative">
                     <div className='bg-pastorWifeImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:left-0'>
-                        <div className='absolute inset-0 opacity-[30%] bg-black' />
+                        <div className='absolute inset-0 opacity-[70%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-28 sm:mt-7'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>Share your Request</h2>
                         <p className='text-lg sm:text-xl mb-3 text-[white]'>Briefly describe your prayer request. All prayer requests are kept confidential.</p>
 
                         <button className='border border-white text-white p-3 font-semibold hover:text-[#115d02] hover:bg-white transition-all ease-in-out duration-300'>
-                            <a href="https://forms.gle/FtuxHvQBxPd13isQ9" target='_blank'>
+                            <a href="https://forms.gle/XJCyPiT2UNiSPHRLA" target='_blank'>
                                 Ask Prayer Request
                             </a>
                         </button>
@@ -79,12 +79,11 @@ const PrayerPage = () => {
                                 <form onSubmit={handleSubmit}>
                                     <div className='flex gap-5 items-center'>
                                         <input
-                                            type="tel"
+                                            type="text"
                                             className={style.input}
                                             value={phoneNumber}
                                             onChange={(e) => setPhoneNumber(e.target.value)}
                                             placeholder="Your Phone Number"
-                                            pattern="[0-9]{10}"
                                             required
                                         />
                                         <button type='submit' className={style.button}>{buttonText}</button>
@@ -114,7 +113,7 @@ const PrayerPage = () => {
             <section className='shadow-xl bg-[#1f4717] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
                     <div className='bg-testBgImage relative border-2 border-[#f4f4f4]  w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
-                        <div className='absolute inset-0 opacity-[30%] bg-black' />
+                        <div className='absolute inset-0 opacity-[70%] bg-black' />
                     </div>
                     <div className='relative bg-[#f4f4f4] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20  sm:mt-8'>
                         <h2 className='text-3xl sm:text-5xl text-center mb-3 text-[black]'>Share your Testimonies</h2>
@@ -124,7 +123,7 @@ const PrayerPage = () => {
 
                         <div className='flex justify-center'>
                             <button className='border border-[#1f4717] text-black p-3 font-semibold hover:text-[white] hover:bg-[#1f4717] transition-all ease-in-out duration-300'>
-                                <a href="https://forms.gle/FtuxHvQBxPd13isQ9" target='_blank'>
+                                <a href="https://forms.gle/5mxxwiVFfbeeh8tD9" target='_blank'>
                                     Share Testimony
                                 </a>
                             </button>

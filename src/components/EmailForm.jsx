@@ -63,12 +63,11 @@ const EmailForm = () => {
                     required
                 />
                 <input
-                    type="tel"
+                    type="text"
                     className={style.input}
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
-                    placeholder="Your Phone Number"
-                    pattern="[0-9]{10}"  
+                    placeholder="Your Phone Number" 
                     required
                 />
 

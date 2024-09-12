@@ -48,10 +48,10 @@ const AboutPage = ({ openModal }) => {
     return (
         <>
             <section className='w-full bg-aboutBgImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[30%] bg-black' />
+                <div className='absolute inset-0 opacity-[70%] bg-black' />
                 <div className="max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12 relative'>
-                        <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WE BELEIVE IN THE <br /> POWER OF PRAYERS</h1>
+                        <h1 className='font-bold text-white text-2xl sm:text-6xl text-center'>WE STAND FIRM IN THE WORD OF GOD, <br/> FIND STRENGTH IN HIS WORSHIP <br/> AND EMBRACE THE GIFT OF PROPHECY</h1>
                     </div>
                 </div>
             </section>
@@ -132,34 +132,34 @@ const AboutPage = ({ openModal }) => {
                     <h1 className='text-center text-2xl sm:text-4xl mb-3 font-semibold'>MEET OUR MINISTERS</h1>
                     <div className='mx-auto w-full flex flex-wrap gap-3 m-auto justify-between items-center' >
                         <div className='mx-auto rounded-lg w-[300px] p-5 flex flex-col items-center justify-around'>
-                            <div className='w-40 h-40 rounded-full bg-pastorImage bg-cover'>
+                            <div className='w-40 h-40 rounded-full bg-pastorInfo  bg-cover'>
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center'>Pastor Isaiah James</h2>
+                                <h2 className='text-lg text-center font-bold'>Pastor Isaiah James</h2>
                                 <p className='text-center'>General Overseer and Pastoral care director at Calvary Family Church</p>
                             </div>
 
 
                         </div>
                         <div className='mx-auto rounded-lg w-[300px] p-5 flex flex-col items-center justify-around'>
-                            <div className='w-40 h-40 rounded-full bg-pastorImage bg-cover'>
+                            <div className='w-40 h-40 rounded-full bg-pastorWifeImage bg-cover'>
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center'>Pastor Isaiah James</h2>
-                                <p className='text-center'>General Overseer and Pastoral care director at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Pastor Mrs Isaiah James</h2>
+                                <p className='text-center'>Pastor at Calvary Family Church</p>
                             </div>
 
 
                         </div>
                         <div className='mx-auto rounded-lg w-[300px] p-5 flex flex-col items-center justify-around'>
-                            <div className='w-40 h-40 rounded-full bg-pastorImage bg-cover'>
+                            <div className='w-40 h-40 rounded-full bg-ministerInfo bg-cover'>
 
                             </div>
                             <div>
-                                <h2 className='text-lg text-center'>Pastor Isaiah James</h2>
-                                <p className='text-center'>General Overseer and Pastoral care director at Calvary Family Church</p>
+                                <h2 className='text-lg text-center font-bold'>Pastor Ezekiel Micheal</h2>
+                                <p className='text-center'>Minister at Calvary Family Church</p>
                             </div>
 
 

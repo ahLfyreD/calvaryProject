@@ -22,13 +22,13 @@ const Footer = ({ openModal }) => {
         <div className='w-full py-4 flex justify-between'>
           <p className='text-[12px] sm:text-lg font-light'>Copyright © 2024. Calvary Family Church</p>
           <div className='flex gap-5 text-2xl'>
-            <a href="" target='_blank'>
+            <a href="https://www.facebook.com/profile.php?id=100086606006450" target='_blank'>
               <FaFacebook />
             </a>
-            <a href="" target='_blank'>
+            <a href="mailto:calvaryfamily01@gmail.com" target='_blank'>
               <SiGmail />
             </a>
-            <a href="" target='_blank'>
+            <a href="https://www.youtube.com/@calvaryfamilytv9960" target='_blank'>
               <FaYoutube />
             </a>
           </div>

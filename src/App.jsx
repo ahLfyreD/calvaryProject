@@ -26,7 +26,7 @@ function App() {
             <CTA />
             <Header />
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/*" element={<HomePage />} />
               <Route path="/prayer" element={<PrayerPage />} />
               <Route path="/who_we_are" element={
                 <AboutPage

@@ -1,9 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Carousel from '../../components/Carousel';
+import PaginationContent from '../../components/PaginationContent';
 import { FaArrowRight } from "react-icons/fa";
+import coffeePic from '/assets/images/coffeePic.jpg';
+import lordRemPic from "/assets/images/lordRemPic.jpg";
 
 const HomePage = () => {
+
+    const images = [
+        {
+            id: 1,
+            image: "/assets/images/lordRemPic.jpg"
+        },
+        {
+            id: 2,
+            image: '/assets/images/mainEvent.jpg'
+        },
+        {
+            id: 3,
+            image: '/assets/images/menCon.jpg'
+        },
+        {
+            id: 4,
+            image: '/assets/images/coffeePic.jpg'
+        }
+    ]
 
     const content = [
         {
@@ -24,8 +46,8 @@ const HomePage = () => {
     ]
     return (
         <>
-            <section className="w-full bg-cover bg-giveBgImage relative">
-                <div className='absolute inset-0 opacity-[30%] bg-black' />
+            <section className="w-full bg-cover bg-pastorHomePage relative">
+                <div className='absolute inset-0 opacity-[50%] bg-black' />
                 <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WELCOME TO</h1>
@@ -47,21 +69,15 @@ const HomePage = () => {
                                     <h2 className='text-lg sm:text-[1.6rem] mb-2 text-[white]'>{item.text}</h2>
                                     <p className='text-sm sm:text-lg text-[white]'>{item.subText}</p>
                                 </div>
-                                {/* <div>
-                                    <button className='border border-white text-white p-3 font-semibold  hover:text-[#115d02] hover:bg-white transition-all ease-in-out duration-300'>
-                                        {item.linkText}
-                                    </button>
-                                </div> */}
-
                             </div>
                         ))}
                     </Carousel>
 
                 </div>
             </section>
-            <section className='shadow-xl bg-[#f4f4f4] py-10'>
+            <section className='bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
-                    <div className='bg-pastorBgImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
+                    <div className='bg-psss relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
                         <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20  sm:mt-8'>
@@ -136,25 +152,47 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='shadow-xl bg-[#f4f4f4] py-10'>
+            <section className='bg-[#f4f4f4] py-10 sm:py-20'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-end relative">
                     <div className='bg-pastorImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:left-0'>
-                    <div className='absolute inset-0 opacity-[30%] bg-black' />
+                        <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
-                    <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20 sm:mt-8'>
+                    <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20 sm:mt-5'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>Word from Pastor!</h2>
-                        <p className='text-lg sm:text-xl mb-3 text-[white]'>Calvary Family Church is a family of revival-minded people yearning for transformation for the people of Akwa Ibom and the world.</p>
+                        <p className='text-lg sm:text-xl mb-3 text-[white]'>Faith is not just about believing in God, but also believing that you are loved, valued and destined for greatness in His kingdom.</p>
 
-                        <p className='text-lg sm:text-xl mb-3 text-[white]'>We believe in looking unto Jesus Christ the author and finisher of our faith. Hebrew 12:2</p>
+                        <p className='text-lg sm:text-xl mb-3 text-[white]'>In every season, God is with us. When we cannot see His hand, we must trust His heart.</p>
 
-                        <p className='text-lg sm:text-xl mb-3 text-[white]'>Our Misson is to bring HOPE and LOVE through Christ to every family. Isaiah 6:1-3</p>
-
-                        <p className='text-lg sm:text-xl mb-3 text-[white]'>Our Vision is to raise and impact generations in our communities ad around the world for Christ. Psalms 145:4-8</p>
-
-                        <p className='text-lg sm:text-xl mb-3 text-[white]'>Our Tool: Soul-inspired worship, preaching and teaching the word, effectual fervent prayer and edifying word of prophecy. Psalm 34:3-5</p>
                     </div>
                 </div>
             </section>
+            <section className='bg-[#f4f4f4]'>
+                <div className="w-full p-5 max-w-7xl mx-auto flex items-center justify-between gap-4 relative">
+                    <div className='w-full sm:flex-1'>
+                        <PaginationContent autoSlide={true}>
+                            {images.map((item) => (
+                                <div className='h-[400px] lg:h-[520px] min-w-full'>
+                                    <img className='w-full h-full' src={item.image} alt="" />
+                                </div>
+                            ))}
+                        </PaginationContent>
+                    </div>
+                    <div className='hidden sm:block w-[425px]'>
+                        <div className='w-[400px] h-[250px] mb-5'>
+                            <img className='w-full h-full' src={lordRemPic} alt="" />
+                        </div>
+
+                        <div className='w-[400px] h-[250px]'>
+                            <img className='w-full h-full' src={coffeePic} alt="" />
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </section>
+
             <section className='w-full bg-calvaryBgImage bg-cover relative'>
                 <div className='absolute inset-0 opacity-[70%] bg-black' />
                 <div className="max-w-3xl p-5 mx-auto flex justify-center h-[50vh] lg:h-screen items-center">

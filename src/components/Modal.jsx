@@ -18,9 +18,9 @@ const Modal = ({ showModal }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const serviceID = "service_z23cez9";
-        const templateID = "template_v89rt68";
-        const publicKey = "B7ridoDOnL18NEqYc";
+        const serviceID = "service_623z2fn";
+        const templateID = "template_nhmnwae";
+        const publicKey = "nvfqUvp5ilMeuahkC";
 
         const templateParams = {
             from_name: name,
@@ -74,12 +74,11 @@ const Modal = ({ showModal }) => {
                             required
                         />
                         <input
-                            type="tel"
+                            type="text"
                             className={style.input}
                             value={phoneNumber}
                             onChange={(e) => setPhoneNumber(e.target.value)}
                             placeholder="Your Phone Number"
-                            pattern="[0-9]{10}"
                             required
                         />
                         <textarea
