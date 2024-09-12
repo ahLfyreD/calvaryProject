@@ -86,7 +86,7 @@ const AboutPage = ({ openModal }) => {
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-28 sm:mt-7'>
                         <h2 className='text-2xl sm:text-4xl mb-3 text-[white]'>Pastor & Mrs Isaiah James</h2>
                         <p className='text-lg sm:text-xl text-[white]'>Leading with Faith and Vision</p>
-                        <p className='text-lg sm:text-xl text-[white]'>Meet our pastors who are dedicated followers of Jesus Christ, who use our unique God-given gifts, anointing, and passions to spread God’s Word across the globe, as well as to help one another grow and follow the calling God has placed on our lives! Daniel and Judith Imagoro are the founding and lead pastors of Restoration Life Church. They are passionate about revival and families. For more than one decade they have helped strengthen the marriages of thousands of people across the world and Coach singles on how to find the will of God in choosing a spouse. Our Pastors have seen God do the impossible miracles in the lives of so many. </p>
+                        <p className='text-lg sm:text-xl text-[white]'>Meet our pastors who are dedicated followers of Jesus Christ, who use our unique God-given gifts, anointing, and passions to spread God’s Word across the globe, as well as to help one another grow and follow the calling God has placed on our lives! Pastor Isaiah James is the founding and lead pastors of Calvary Christain Family Church. Our Pastors have seen God do the impossible miracles in the lives of so many. </p>
                     </div>
                 </div>
             </section>
