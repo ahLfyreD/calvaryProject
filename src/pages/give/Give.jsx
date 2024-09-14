@@ -21,7 +21,7 @@ const Give = () => {
     return (
         <>
             <section className='w-full bg-homeImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className='absolute inset-0 opacity-[50%] bg-black' />
                 <div className="p-5 max-w-3xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='relative w-full p-6 text-white rounded-2xl mb-12 flex flex-col justify-center gap-7'>
                         <h1 className='text-center font-medium text-3xl sm:text-5xl'>Your generosity fuels our mission!</h1>

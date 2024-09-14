@@ -5,7 +5,7 @@ const Youth = () => {
     return (
         <>
             <section className='w-full bg-youthImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className='absolute inset-0 opacity-[30%] bg-black' />
                 <div className="max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12 relative flex justify-center items-center'>
                         <div>
@@ -23,7 +23,7 @@ const Youth = () => {
             </section>
             <section className='bg-[#f4f4f4]'>
                 <div className="w-full p-5">
-                    <div className="relative max-w-7xl mx-auto grid sm:grid-cols-2 gap-5 mb-20">
+                    <div className="relative max-w-7xl mx-auto grid sm:grid-cols-2 gap-5 mb-10">
                         <div>
                             <div className="w-fit border-b-2 border-[#333333] mb-5">
                                 <h2 className='text-xl lg:text-3xl font-semibold text-[#333333] '>WEEKLY ACTIVITY</h2>
@@ -78,17 +78,6 @@ const Youth = () => {
                             <div>
                                 <h2 className='text-lg text-center font-bold'>Ayo Alatise</h2>
                                 <p className='text-center'>Youth Minister</p>
-                            </div>
-
-
-                        </div>
-                        <div className='mx-auto rounded-lg w-[300px] p-5 flex flex-col items-center justify-around'>
-                            <div className='w-40 h-40 rounded-full bg-choirLeader bg-cover'>
-
-                            </div>
-                            <div>
-                                <h2 className='text-lg text-center font-bold'>Victor Edet</h2>
-                                <p className='text-center'>Choir Leader</p>
                             </div>
 
 

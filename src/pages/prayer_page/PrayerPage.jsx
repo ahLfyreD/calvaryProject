@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 const PrayerPage = () => {
 
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [loading, setLoading] = useState(false);
     const [buttonText, setButtonText] = useState(<FaArrowRight />);
 
     const style = {
@@ -16,6 +17,8 @@ const PrayerPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setLoading(true);
 
         const serviceID = "service_ytd3s6e";
         const templateID = "template_78fa5f3";
@@ -36,6 +39,8 @@ const PrayerPage = () => {
             })
             .catch((error) => {
                 console.error("Error sending message", error);
+            }).finally(() => {
+                setLoading(false);
             });
     }
 
@@ -43,7 +48,7 @@ const PrayerPage = () => {
     return (
         <>
             <section className='w-full bg-prayerImage bg-cover relative'>
-                <div className='absolute inset-0 opacity-[70%] bg-black' />
+                <div className='absolute inset-0 opacity-[30%] bg-black' />
                 <div className="max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12 relative'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WE BELEIVE IN THE <br /> POWER OF PRAYERS</h1>
@@ -53,7 +58,7 @@ const PrayerPage = () => {
             <section className='shadow-xl bg-[#f4f4f4] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-end relative">
                     <div className='bg-pastorWifeImage relative border-2 border-[#1f4717] w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:left-0'>
-                        <div className='absolute inset-0 opacity-[70%] bg-black' />
+                        <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#1f4717] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-28 sm:mt-7'>
                         <h2 className='text-3xl sm:text-5xl mb-3 text-[white]'>Share your Request</h2>
@@ -86,7 +91,7 @@ const PrayerPage = () => {
                                             placeholder="Your Phone Number"
                                             required
                                         />
-                                        <button type='submit' className={style.button}>{buttonText}</button>
+                                        <button type='submit' className={style.button}>{loading ? "..." : buttonText}</button>
                                     </div>
 
                                 </form>
@@ -113,7 +118,7 @@ const PrayerPage = () => {
             <section className='shadow-xl bg-[#1f4717] py-10'>
                 <div className="w-full p-5 max-w-6xl mx-auto sm:flex sm:justify-start relative">
                     <div className='bg-testBgImage relative border-2 border-[#f4f4f4]  w-full h-[250px] sm:w-[400px] sm:h-[300px] bg-cover sm:absolute sm:top-0 sm:right-0'>
-                        <div className='absolute inset-0 opacity-[70%] bg-black' />
+                        <div className='absolute inset-0 opacity-[30%] bg-black' />
                     </div>
                     <div className='relative bg-[#f4f4f4] mx-auto sm:mx-0 w-[90%] sm:w-[75%] p-5 sm:p-7 rounded-2xl -mt-20  sm:mt-8'>
                         <h2 className='text-3xl sm:text-5xl text-center mb-3 text-[black]'>Share your Testimonies</h2>

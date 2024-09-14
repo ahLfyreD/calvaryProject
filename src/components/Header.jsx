@@ -117,7 +117,7 @@ const Header = () => {
 
       {!isHeaderVisible && (
         <div
-          className="cursor-pointer shadow-lg fixed text-white bottom-20 right-10 z-40 h-10 w-10 bg-[#1f4717] rounded-full flex justify-center items-center"
+          className="cursor-pointer shadow-lg fixed text-white bottom-20 right-5 z-40 h-10 w-10 bg-[#1f4717] rounded-full flex justify-center items-center"
           onClick={() => {
             window.scrollTo({
               top: 0,

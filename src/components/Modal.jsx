@@ -8,6 +8,7 @@ const Modal = ({ showModal }) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [loading, setLoading] = useState(false);
     const [buttonText, setButtonText] = useState("Send");
 
     const style = {
@@ -17,6 +18,8 @@ const Modal = ({ showModal }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setLoading(true);
 
         const serviceID = "service_623z2fn";
         const templateID = "template_nhmnwae";
@@ -32,7 +35,7 @@ const Modal = ({ showModal }) => {
 
         emailjs.send(serviceID, templateID, templateParams, publicKey)
             .then((response) => {
-                setButtonText("sent!");
+                setButtonText("Sent!");
                 setEmail("");
                 setName("");
                 setMessage("");
@@ -43,6 +46,8 @@ const Modal = ({ showModal }) => {
             })
             .catch((error) => {
                 console.error("Error sending message", error);
+            }).finally(() => {
+                setLoading(false);
             });
     }
     return (
@@ -89,7 +94,7 @@ const Modal = ({ showModal }) => {
                             onChange={(e) => setMessage(e.target.value)}
                             required
                         ></textarea>
-                        <button type='submit' className={style.button}>{buttonText}</button>
+                        <button type='submit' className={style.button}>{loading ? "Sending..." : buttonText}</button>
                     </form>
                 </div>
 

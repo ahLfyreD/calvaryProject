@@ -47,7 +47,7 @@ const HomePage = () => {
     return (
         <>
             <section className="w-full bg-cover bg-pastorHomePage relative">
-                <div className='absolute inset-0 opacity-[50%] bg-black' />
+                <div className='absolute inset-0 opacity-[30%] bg-black' />
                 <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-[50vh] lg:h-screen items-center">
                     <div className='w-full mb-12'>
                         <h1 className='font-bold text-white text-4xl sm:text-7xl text-center'>WELCOME TO</h1>
@@ -167,27 +167,32 @@ const HomePage = () => {
                 </div>
             </section>
             <section className='bg-[#f4f4f4]'>
-                <div className="w-full p-5 max-w-7xl mx-auto flex items-center justify-between gap-4 relative">
-                    <div className='w-full sm:flex-1'>
-                        <PaginationContent autoSlide={true}>
-                            {images.map((item) => (
-                                <div className='h-[400px] lg:h-[520px] min-w-full'>
-                                    <img className='w-full h-full' src={item.image} alt="" />
-                                </div>
-                            ))}
-                        </PaginationContent>
-                    </div>
-                    <div className='hidden sm:block w-[425px]'>
-                        <div className='w-[400px] h-[250px] mb-5'>
-                            <img className='w-full h-full' src={lordRemPic} alt="" />
+                <div className="w-full p-5 max-w-7xl mx-auto">
+
+                    <div className='flex items-center justify-between gap-4 relative'>
+                        <div className='w-full sm:flex-1'>
+                            <PaginationContent autoSlide={true}>
+                                {images.map((item) => (
+                                    <div className='h-[400px] lg:h-[520px] min-w-full'>
+                                        <img className='w-full h-full aspect-[3/2] object-contain' src={item.image} alt="" />
+                                    </div>
+                                ))}
+                            </PaginationContent>
+                        </div>
+                        <div className='hidden sm:block w-[425px]'>
+                            <div className='w-[400px] h-[250px] mb-5'>
+                                <img className='w-full h-full' src={lordRemPic} alt="" />
+                            </div>
+
+                            <div className='w-[400px] h-[250px]'>
+                                <img className='w-full h-full' src={coffeePic} alt="" />
+                            </div>
+
+
                         </div>
 
-                        <div className='w-[400px] h-[250px]'>
-                            <img className='w-full h-full' src={coffeePic} alt="" />
-                        </div>
-
-
                     </div>
+
 
 
                 </div>
